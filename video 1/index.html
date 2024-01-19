@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo_ham">
+            <div class="logo">
+                <a href="">Navbar</a>
+            </div>
+            <div class="hamburger" onclick="open_nav()">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+        </div>
+        <div class="nav-links">
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">Blog</a></li>
+                <li><a href="">Contact Us</a></li>
+            </ul>
+        </div>
+    </nav>
+    <script>
+        function open_nav(){
+            let nav=document.querySelector(".navbar").classList.toggle("active");
+            let navLinks=document.querySelector(".nav-links").classList.toggle("active");
+            let hamburger=document.querySelector(".hamburger").classList.toggle("active");
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.drawer1, .drawer2, .drawer3, .drawer4, .drawer5, .drawer6{
+    cursor: pointer;
+}
+.line{
+    height: 5px;
+    width: 40px;
+    background: blue;
+    margin: 0.5em;
+    transition: 0.7s;
+}
+.drawer1:hover .line:nth-child(2){
+    display: none;
+}
+.drawer1:hover .line:nth-child(1){
+    translate: 0 7px;
+    rotate: 45deg;
+}
+.drawer1:hover .line:nth-child(3){
+    translate: 0 -7px;
+    rotate: -45deg;
+}
+
+.drawer2:hover{
+    transform: translateY(-7px);
+}
+.drawer2:hover .line:nth-child(2){
+  translate: 5px 7px;
+}
+.drawer2:hover .line:nth-child(1){
+    translate: 0 7px;
+    rotate: -45deg;
+}
+.drawer2:hover .line:nth-child(3){
+    translate: 0 7px;
+    rotate: 45deg;
+}
+
+.drawer3:hover{
+    transform: translateY(-7px);
+}
+.drawer3:hover .line:nth-child(2){
+  translate: -5px 7px;
+}
+.drawer3:hover .line:nth-child(1){
+    translate: 0 7px;
+    rotate: 45deg;
+}
+.drawer3:hover .line:nth-child(3){
+    translate: 0 7px;
+    rotate: -45deg;
+}
+.drawer4:hover{
+    transform: translateY(-7px);
+    rotate: 90deg;
+}
+.drawer4:hover .line:nth-child(2){
+  translate: -5px 7px;
+  
+}
+.drawer4:hover .line:nth-child(1){
+    translate: 0 7px;
+    rotate: 45deg;
+}
+.drawer4:hover .line:nth-child(3){
+    translate: 0 7px;
+    rotate: -45deg;
+}
+
+.drawer5:hover{
+    rotate: -90deg;
+}
+.drawer5:hover .line:nth-child(2){
+  translate: -5px 7px;
+}
+.drawer5:hover .line:nth-child(1){
+    translate: 0 7px;
+    rotate: 45deg;
+}
+.drawer5:hover .line:nth-child(3){
+    translate: 0 7px;
+    rotate: -45deg;
+}
+
+.drawer6:hover .line:nth-child(1){
+    display: none;
+}
+.drawer6:hover .line:nth-child(3){
+    display: none;
+}

@@ -1,0 +1,24 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Cormorant Garamond';
+    font-size: 150px;
+    font-weight: 700;
+}
+  body{
+    background-image: linear-gradient(green, blue);
+    font-size: larger;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+}
+
+p{
+    -webkit-background-clip: text;
+    color: transparent;
+    background-image: url(jugle.jpeg);
+}
