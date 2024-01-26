@@ -8,6 +8,7 @@ body{
     display: flex;
     justify-content: space-around;
     align-items: center;
+    background: #0899e1;
 }
 .drawer1, .drawer2, .drawer3, .drawer4, .drawer5, .drawer6{
     cursor: pointer;
@@ -15,9 +16,11 @@ body{
 .line{
     height: 5px;
     width: 40px;
-    background: blue;
+    background: red;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
     margin: 0.5em;
     transition: 0.7s;
+    border-radius: 0.3em;
 }
 .drawer1:hover .line:nth-child(2){
     display: none;
