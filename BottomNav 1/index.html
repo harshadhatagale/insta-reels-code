@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons"
+      rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bottom Navbar</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="page" id="chat">chat</div>
+    <div class="page" id="settings">settigs</div>
+    <div class="page" id="home">home</div>
+    <div class="page" id="send">send</div>
+    <div class="page" id="account">account</div>
+    <nav class="BottomNav">
+        <a class="active" href="#chat" onclick="showPage('chat')"><span class="material-icons">chat</span></a>
+        <a href="#settings" onclick="showPage('settings')"><span class="material-icons">settings</span></a>
+        <a href="#home" onclick="showPage('home')"><span class="material-icons">home</span></a>
+        <a href="#send" onclick="showPage('send')"><span class="material-icons">send</span></a>
+        <a href="#account" onclick="showPage('account')"><span class="material-icons">person</span></a>
+    </nav>
+    <script src="index.js"></script>
+</body>
+</html>
